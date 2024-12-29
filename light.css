@@ -109,3 +109,49 @@ footer {
 .theme-toggle:hover {
     transform: rotate(360deg);
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    nav {
+        margin: 10px 0;
+        text-align: center; /* Выравнивание ссылок по центру */
+    }
+
+    nav a {
+        display: block; /* Каждая ссылка занимает свою строку */
+        padding: 8px 0;
+    }
+
+    .buttons {
+        flex-direction: column; /* Кнопки располагаются в столбик */
+        align-items: center;
+    }
+
+    .button {
+        width: 100%; /* Кнопки занимают всю ширину контейнера */
+        text-align: center;
+    }
+
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .panel-title {
+        font-size: 18px; /* Уменьшаем размер текста для маленьких экранов */
+    }
+
+    .button {
+        font-size: 14px; /* Уменьшаем размер текста кнопок */
+        padding: 8px 10px; /* Уменьшаем отступы внутри кнопок */
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
